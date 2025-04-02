@@ -3,3 +3,6 @@ onlyBuiltDependencies:
   - esbuild
   - nx
   - styled-components
+
+packages:
+  - 'apps/*'
