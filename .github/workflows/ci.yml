@@ -40,7 +40,10 @@ jobs:
         run: pnpm -v
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile && pwd ls -al
+        run: |
+        cd comket-monorepo
+        pwd ls -al
+        pnpm install --frozen-lockfile
         working-directory: ../
 
       - name: Set Nx SHAs (for affected commands)
