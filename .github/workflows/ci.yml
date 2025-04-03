@@ -36,6 +36,7 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+        working-directory: ../
 
       - name: Set Nx SHAs (for affected commands)
         uses: nrwl/nx-set-shas@v4
