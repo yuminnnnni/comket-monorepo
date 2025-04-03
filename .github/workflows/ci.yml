@@ -15,13 +15,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Debug current directory
-        run: pwd ls -al
-        
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          path: .
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
@@ -40,10 +35,7 @@ jobs:
         run: pnpm -v
 
       - name: Install dependencies
-        run: |
-          pwd
-          ls -al
-          pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Set Nx SHAs (for affected commands)
         uses: nrwl/nx-set-shas@v4
