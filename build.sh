@@ -2,7 +2,7 @@
 set -e  # 에러 발생 시 스크립트 중단
 
 pnpm install
-pnpm exec nx build frontend
+pnpm exec nx build frontend --no-cloud
 
 # 빌드가 성공했을 경우에만 아래 명령 실행됨
 rm -rf output
