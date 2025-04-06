@@ -2,7 +2,9 @@
   "name": "@comket-monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "pnpm exec nx build frontend"
+  },
   "private": true,
   "workspaces": [
     "apps/*",
