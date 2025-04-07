@@ -1,8 +1,0 @@
-onlyBuiltDependencies:
-  - '@swc/core'
-  - esbuild
-  - nx
-  - styled-components
-
-packages:
-  - 'apps/*'
